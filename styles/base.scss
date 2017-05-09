@@ -1,0 +1,88 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	background-color: $blue;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+.container-login {
+	background-color: $white;
+	max-width: 30px;
+	min-width: 250px;
+	padding: 70px 50px;
+	border-radius: 6px;
+}
+img {
+	width: 150px;
+}
+.container-image {
+	text-align: center;
+}
+i.person {
+	color: $blue;
+}
+i.pass {
+	color: $blue;
+}
+.username {
+	display: flex;
+	width: 100%;
+	margin-top: 30px;
+}
+.password {
+	display: flex;
+	margin-top: 20px;
+
+}
+button {
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	background-color: $blue;
+	color: $white;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+input {
+	padding: 5px 10px;
+	padding-left: 5px;
+	border: none;
+	border: 1px solid $blue;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 100%;
+	color: $blue;
+	outline: none;
+}
+.container-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px;
+	border: 1px solid $blue;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-right: none;
+}
+*::-webkit-input-placeholder {
+    color: $blue;
+}
+.advice {
+	font-size: 10px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.check {
+	display: inline-block;
+}
+.remember-password {
+	display: flex;
+}
