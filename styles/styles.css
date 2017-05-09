@@ -85,4 +85,7 @@ input {
 .remember-password {
   display: flex; }
 
+a {
+  cursor: pointer; }
+
 /*# sourceMappingURL=styles.css.map */
