@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="js/app.js"></script>
+ <meta charset="UTF-8">
+ <title>Login</title>
+ <link rel="stylesheet" type="text/css" href="../src/styles/styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+ <script src="js/app.js"></script>
 </head>
 <body>
 	<div class="container" ng-app='myApp' ng-controller='myController'>
 		<div class="container-login">
 			<div class="container-image">
-				<img src="images/user.png">
+				<img src="../src/images/user.png">
 			</div>
 			<div class="info-user">
+				<p class="error-message-login">{{ error }}</p>
 				<div class="username">
 					<div class="icon-user container-icon">
 						<i class="fa fa-user-o person"></i>
 					</div>
-					<input type="email" name="myUser" placeholder="Username" class="input-data" ng-model="myUser">
+					<input type="email" name="myUser" placeholder="Username" class="input-data" ng-model="user.email">
 				</div>
 				<div class="password">
 					<div class="icon-password container-icon">
 						<i class="fa fa-key pass"></i>
 					</div>
-					<input type="number" name="password" placeholder="Password" class="input-data" ng-model="myPassword">
+					<input type="password" name="password" placeholder="Password" class="input-data" ng-model="user.password">
 				</div>
+				<br>
 				<div class="advice">
 					<div class="remember-password">
 						<input type="checkbox" checked="checked" class="check"><a>Remember me</a>
@@ -36,14 +38,9 @@
 						<a>Forgot Password?</a>
 					</div>
 				</div>
-				<a href="../shopping-list/index.html">
-					<button ng-click="setData()">LOGIN</button>
-				</a>
+				<button ng-click="login()" class="button-send">LOGIN</button>
 			</div>
 		</div>
-	</div>
-	<div class="invisible">
-		<p>Usuario y/o contraseña incorrecta</p>
 	</div>
 </body>
 </html>
