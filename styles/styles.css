@@ -88,4 +88,17 @@ input {
 a {
   cursor: pointer; }
 
+.incorrectData {
+  background-color: #FFF;
+  position: fixed;
+  z-index: 999999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  border: 1px solid red;
+  display: none; }
+
+.incorrectData.visible {
+  display: block; }
+
 /*# sourceMappingURL=styles.css.map */
