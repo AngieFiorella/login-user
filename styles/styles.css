@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #4B79AE; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.container-login {
+  background-color: #FFF;
+  max-width: 30px;
+  min-width: 250px;
+  padding: 70px 50px;
+  border-radius: 6px; }
+
+img {
+  width: 150px; }
+
+.container-image {
+  text-align: center; }
+
+i.person {
+  color: #4B79AE; }
+
+i.pass {
+  color: #4B79AE; }
+
+.username {
+  display: flex;
+  width: 100%;
+  margin-top: 60px; }
+
+.password {
+  display: flex;
+  margin-top: 20px; }
+
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  background-color: #4B79AE;
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer; }
+
+input {
+  padding: 5px 12px;
+  padding-left: 5px;
+  border: none;
+  border: 1px solid #4B79AE;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  color: #4B79AE;
+  outline: none; }
+
+.container-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #4B79AE;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none; }
+
+*::-webkit-input-placeholder {
+  color: #4B79AE; }
+
+.advice {
+  font-size: 10px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: #8BA8C9; }
+
+.check {
+  display: inline-block; }
+
+.remember-password {
+  display: flex; }
+
+a {
+  cursor: pointer; }
+
+.incorrectData {
+  background-color: #FFF;
+  position: fixed;
+  z-index: 999999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  border: 1px solid red;
+  display: none; }
+
+.incorrectData.visible {
+  display: block; }
+
+/*# sourceMappingURL=styles.css.map */
